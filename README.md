@@ -23,7 +23,7 @@ A tabela `Doadores` é responsável por armazenar os seguintes dados:
 
 ```
 -- Criação da tabela de doadores
-CREATE TABLE Doadores (
+CREATE TABLE IF NOT EXISTS Doadores (
     id INTEGER PRIMARY KEY AUTOINCREMENT,  -- ID único do doador (chave primária)
     nome TEXT NOT NULL,                   -- Nome do doador
     contato TEXT NOT NULL                 -- Contato do doador (telefone ou e-mail)
