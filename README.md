@@ -12,6 +12,26 @@ O **Doe+Conecta** é um aplicativo mobile inovador desenvolvido para facilitar a
 
 O **Doe+Conecta** tem o objetivo de não só facilitar a doação, mas também de construir uma rede de solidariedade e aumentar a conscientização sobre a importância desse gesto vital.
 
+## Estrutura da Tabela Doadores
+A tabela `Doadores` é responsável por armazenar os seguintes dados:
+
+- **id:** Campo único para identificar cada doador, configurado como chave primária (PK) e autoincrementável, ou seja, o valor será gerado automaticamente a cada novo registro.
+- **nome:** Campo de texto para armazenar o nome do doador. É obrigatório (NOT NULL).
+- **contato:** Campo de texto para armazenar o contato do doador (telefone ou e-mail). Também é obrigatório (NOT NULL).
+
+### Script SQL para Criação da Tabela
+
+```
+-- Criação da tabela de doadores
+CREATE TABLE Doadores (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,  -- ID único do doador (chave primária)
+    nome TEXT NOT NULL,                   -- Nome do doador
+    contato TEXT NOT NULL                 -- Contato do doador (telefone ou e-mail)
+);
+
+```
+
+Esse script pode ser executado no seu sistema de gerenciamento de banco de dados para criar a tabela onde as informações dos doadores serão armazenadas.
 
 ## Tela Login
 
