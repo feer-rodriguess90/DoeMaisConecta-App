@@ -135,7 +135,7 @@ class App(UserControl):
     def build(self):
         return Column([
             Text("DOE + CONECTA", size=25, weight='bold', color="white"),
-            Text("Adicionar doador", size=20),
+            Text("Adicionar Doador", size=20),
             self.adicionar_doador,
             self.adicionar_contato,
             ElevatedButton(
@@ -164,7 +164,22 @@ def main(page:Page):
     )
 
     page.window.height = 700
-    page.window.width = 350         
+    page.window.width = 350    
+    page.window_maximizable = False     
+
+    page.bottom_appbar = BottomAppBar(
+        bgcolor='#FF5175',
+        shape=NotchShape.CIRCULAR,
+        content=Row(
+            controls=[
+                IconButton(icon=icons.MENU, icon_color=colors.WHITE),
+                IconButton(icon=icons.HOME, icon_color=colors.WHITE),
+                Container(expand=True),
+                IconButton(icon=icons.SEARCH, icon_color=colors.WHITE),
+                IconButton(icon=icons.CHAT, icon_color=colors.WHITE),
+            ]
+        ),
+    )
     
     page.add(
         minha_aplicacao, 

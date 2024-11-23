@@ -5,6 +5,7 @@ def main(page:ft.Page):
     page.vertical_alignment = 'center'
     page.window.height = 700
     page.window.width = 350
+    page.window_maximizable = False 
 
     def logar(e):
         page.remove(register)
