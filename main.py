@@ -10,7 +10,7 @@ def tabela_base():
     cursor.execute(
         '''
         CREATE TABLE IF NOT EXISTS clientes (id INTEGER PRIMARY KEY AUTOINCREMENT, 
-        nome TEXT NOT NULL, contato TEXT)
+        nome TEXT NOT NULL, contato TEXT NOT NULL)
     '''
     )
 
