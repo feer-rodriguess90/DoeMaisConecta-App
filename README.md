@@ -68,7 +68,7 @@ O aplicativo oferece um canal de comunicação direto com hemocentros e profissi
 - ***Python:*** Linguagem principal usada para desenvolver a lógica e funcionalidades do aplicativo.
 - ***Flet:*** Framework utilizado para criar interfaces modernas e responsivas, com foco em aplicações mobile e desktop.
 - ***SQLite3:*** Banco de dados leve integrado para armazenar informações de doadores, campanhas e agendamentos.
-- ***Figma:*** Ferramenta usada para criar o design e prototipar as telas do aplicativo. [Acesse aqui o protótipo do Figma](bit.ly/4i0zB1j) 
+- ***Figma:*** Ferramenta usada para criar o design e prototipar as telas do aplicativo. [Acesse aqui o protótipo do Figma](https://www.figma.com/design/UcwYltqQKnXLRBqCrN03q7/Untitled?node-id=0-1&node-type=canvas&t=jofE42Lwpok1l4Xi-0) 
 
 ## 🤝🏽 Colaboradores 
 
