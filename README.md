@@ -73,7 +73,7 @@ O aplicativo oferece um canal de comunicação direto com hemocentros e profissi
 ## 🤝🏽 Colaboradores 
 
 - Álvaro Silva Garcia
-- Bryan Cardoso Da Silva
+- Amanda Duarte de Almeida
 - Bryan Cardoso Da Silva
 - Fernanda Rodrigues Da Cunha
 - Flavia Aparecida Lara Cardoso
