@@ -63,7 +63,7 @@ O aplicativo oferece um canal de comunicação direto com hemocentros e profissi
 
 ![tela_opcoes](https://github.com/feer-rodriguess90/DoeMaisConecta-App/blob/main/assets/TelaOpcoes.png)
 
-## Tecnologias Utilizadas
+## 🛠 Tecnologias Utilizadas
 
 - ***Python:*** Linguagem principal usada para desenvolver a lógica e funcionalidades do aplicativo.
 - ***Flet:*** Framework utilizado para criar interfaces modernas e responsivas, com foco em aplicações mobile e desktop.
