@@ -23,7 +23,7 @@ A tabela `Doadores` é responsável por armazenar os seguintes dados:
 
 ```
 -- Criação da tabela de doadores
-CREATE TABLE Doadores (
+CREATE TABLE IF NOT EXISTS Doadores (
     id INTEGER PRIMARY KEY AUTOINCREMENT,  -- ID único do doador (chave primária)
     nome TEXT NOT NULL,                   -- Nome do doador
     contato TEXT NOT NULL                 -- Contato do doador (telefone ou e-mail)
@@ -47,12 +47,12 @@ Esse script pode ser executado no seu sistema de gerenciamento de banco de dados
 
 ## 🤝🏽 Colaboradores 
 
-- ALVARO SILVA GARCIA
-- AMANDA DUARTE DE ALMEIDA
-- BRYAN CARDOSO DA SILVA 
-- FERNANDA RODRIGUES DA CUNHA
-- FLAVIA APARECIDA LARA CARDOSO 
-- SAMARA RODRIGUES DOS SANTOS CUPERTINO
+- Álvaro Silva Garcia
+- Bryan Cardoso Da Silva
+- Bryan Cardoso Da Silva
+- Fernanda Rodrigues Da Cunha
+- Flavia Aparecida Lara Cardoso
+- Samara Rodrigues Dos Santos Cupertino
 
 
 
