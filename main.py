@@ -172,12 +172,13 @@ def main(page:Page):
         shape=NotchShape.CIRCULAR,
         content=Row(
             controls=[
-                IconButton(icon=icons.MENU, icon_color=colors.WHITE),
-                IconButton(icon=icons.HOME, icon_color=colors.WHITE),
-                Container(expand=True),
-                IconButton(icon=icons.SEARCH, icon_color=colors.WHITE),
-                IconButton(icon=icons.CHAT, icon_color=colors.WHITE),
-            ]
+                IconButton(icon=icons.MENU, icon_color=colors.WHITE, icon_size= 30),
+                IconButton(icon=icons.HOME, icon_color=colors.WHITE, icon_size= 30),
+                #Container(expand=True),
+                IconButton(icon=icons.SEARCH, icon_color=colors.WHITE, icon_size= 30),
+                IconButton(icon=icons.CHAT, icon_color=colors.WHITE, icon_size= 30),
+            ],
+            alignment=MainAxisAlignment.SPACE_BETWEEN,
         ),
     )
     
