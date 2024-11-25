@@ -6,7 +6,7 @@ def main(page:ft.Page):
     page.title = 'Opções'
     page.window.height = 700
     page.window.width = 350
-    page.window_maximizable = False
+    page.window.maximizable = False
 
     page.bgcolor = ft.colors.TRANSPARENT
     page.decoration = ft.BoxDecoration(
