@@ -1,7 +1,7 @@
 from flet import *
 import sqlite3
 
-#Connectando ao banco de dados
+#Conectando ao banco de dados
 conexao = sqlite3.connect("dados.db", check_same_thread=False)
 cursor = conexao.cursor()
 
