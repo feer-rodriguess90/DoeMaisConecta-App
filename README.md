@@ -31,7 +31,19 @@ CREATE TABLE IF NOT EXISTS Doadores (
 
 ```
 
-Esse script pode ser executado no seu sistema de gerenciamento de banco de dados para criar a tabela onde as informações dos doadores serão armazenadas.
+```
+CREATE TABLE Agendamentos (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    doador_id INTEGER NOT NULL,
+    data TEXT NOT NULL,
+    hora TEXT NOT NULL,
+    local TEXT NOT NULL,
+    FOREIGN KEY (doador_id) REFERENCES Doadores(id)
+);
+```
+Essa estrutura garante integridade referencial entre Agendamentos e Doadores, permitindo consultas como: quais agendamentos pertencem a determinado doador.
+
+
 
 ## Tela Login
 
