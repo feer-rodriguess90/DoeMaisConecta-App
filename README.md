@@ -15,9 +15,12 @@ O `Doe+Conecta` tem o objetivo de não só facilitar a doação, mas também de 
 ##  Estrutura da Tabela Doadores
 A tabela `Doadores` é responsável por armazenar os seguintes dados:
 
-- ***id:*** Campo único para identificar cada doador, configurado como chave primária (PK) e autoincrementável, ou seja, o valor será gerado automaticamente a cada novo registro.
-- ***nome:*** Campo de texto para armazenar o nome do doador. É obrigatório (NOT NULL).
-- ***contato:*** Campo de texto para armazenar o contato do doador (telefone ou e-mail). Também é obrigatório (NOT NULL).
+| Campo   | Tipo         | Descrição                                                           |
+| ------- | ------------ | ------------------------------------------------------------------- |
+| id      | INTEGER (PK) | Identificador único, chave primária, geralmente com `AUTOINCREMENT` |
+| nome    | TEXT         | Nome completo do doador                                             |
+| contato | TEXT         | Telefone ou e-mail de contato                                       |
+
 
 ### Script SQL para Criação da Tabela
 
@@ -31,6 +34,20 @@ CREATE TABLE IF NOT EXISTS Doadores (
 
 ```
 
+##  Estrutura da Tabela Agendamentos
+A tabela `Agendamentos` é responsável por armazenar os seguintes dados:
+
+| Campo      | Tipo         | Descrição                                             |
+| ---------- | ------------ | ----------------------------------------------------- |
+| id         | INTEGER (PK) | Identificador único do agendamento (chave primária)   |
+| doador\_id | INTEGER (FK) | Referência ao ID do doador na tabela `Doadores`       |
+| data       | TEXT         | Data do agendamento (formato recomendado: YYYY-MM-DD) |
+| hora       | TEXT         | Horário da doação (formato recomendado: HH\:MM)       |
+| local      | TEXT         | Nome ou endereço do local de doação                   |
+
+
+### Script SQL para Criação da Tabela
+
 ```
 CREATE TABLE Agendamentos (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -42,6 +59,20 @@ CREATE TABLE Agendamentos (
 );
 ```
 Essa estrutura garante integridade referencial entre Agendamentos e Doadores, permitindo consultas como: *quais agendamentos pertencem a determinado doador.*
+
+##  Estrutura da Tabela Campanhas
+A tabela `Campanhas` é responsável por armazenar os seguintes dados:
+
+| Campo        | Tipo         | Descrição                                         |
+| ------------ | ------------ | ------------------------------------------------- |
+| id           | INTEGER (PK) | Identificador único da campanha (chave primária)  |
+| titulo       | TEXT         | Título da campanha                                |
+| descricao    | TEXT         | Descrição detalhada da campanha                   |
+| data\_inicio | TEXT         | Data de início da campanha (formato: YYYY-MM-DD)  |
+| data\_fim    | TEXT         | Data de término da campanha (formato: YYYY-MM-DD) |
+
+
+### Script SQL para Criação da Tabela
 
 ```
 CREATE TABLE Campanhas (
@@ -55,6 +86,31 @@ CREATE TABLE Campanhas (
 ```
 Essa estrutura permite cadastrar e gerenciar diferentes campanhas de doação e conscientização no aplicativo. <br>
 ***As campanhas são informativas e não dependem diretamente de outra entidade → (independente)***
+
+##  Estrutura da Tabela Chats
+A tabela `Chats` é responsável por armazenar os seguintes dados:
+
+| Campo       | Tipo         | Descrição                                                     |
+| ----------- | ------------ | ------------------------------------------------------------- |
+| id          | INTEGER (PK) | Identificador único da mensagem (chave primária)              |
+| doador\_id  | INTEGER (FK) | Referência ao doador que enviou a mensagem                    |
+| mensagem    | TEXT         | Conteúdo da mensagem                                          |
+| data\_envio | TEXT         | Data e hora do envio da mensagem (formato: YYYY-MM-DD HH\:MM) |
+
+
+### Script SQL para Criação da Tabela
+
+```
+CREATE TABLE Chats (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    doador_id INTEGER NOT NULL,
+    mensagem TEXT NOT NULL,
+    data_envio TEXT NOT NULL,
+    FOREIGN KEY (doador_id) REFERENCES Doadores(id)
+);
+
+```
+
 
 ## Tela Login
 
