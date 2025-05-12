@@ -41,9 +41,20 @@ CREATE TABLE Agendamentos (
     FOREIGN KEY (doador_id) REFERENCES Doadores(id)
 );
 ```
-Essa estrutura garante integridade referencial entre Agendamentos e Doadores, permitindo consultas como: quais agendamentos pertencem a determinado doador.
+Essa estrutura garante integridade referencial entre Agendamentos e Doadores, permitindo consultas como: *quais agendamentos pertencem a determinado doador.*
 
+```
+CREATE TABLE Campanhas (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    titulo TEXT NOT NULL,
+    descricao TEXT NOT NULL,
+    data_inicio TEXT NOT NULL,
+    data_fim TEXT NOT NULL
+);
 
+```
+Essa estrutura permite cadastrar e gerenciar diferentes campanhas de doação e conscientização no aplicativo. <br>
+***As campanhas são informativas e não dependem diretamente de outra entidade → (independente)***
 
 ## Tela Login
 
