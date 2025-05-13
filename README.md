@@ -111,6 +111,10 @@ CREATE TABLE Chats (
 
 ```
 
+## DER (Diagrama Entidade Relacionamento)
+
+![DER]()
+
 
 ## Tela Login
 
