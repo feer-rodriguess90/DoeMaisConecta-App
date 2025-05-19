@@ -1,4 +1,7 @@
 # 🩸 Doe+Conecta: Aplicativo para Doação de Sangue
+
+Acesse nossa [Landing page](https://feer-rodriguess90.github.io/DoeMaisConecta-App/)
+
 ### Doação De Sangue Na Palma Da Mão <br>
 Tecnologia em prol da vida: um app para otimizar o processo de conexão entre Doadores e Receptores
 
