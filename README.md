@@ -10,7 +10,7 @@ Essa **landing page** tem como objetivo apresentar o projeto, destacar suas func
 
 
 
-### Doação De Sangue Na Palma Da Mão <br>
+## Doação De Sangue Na Palma Da Mão <br>
 Tecnologia em prol da vida: um app para otimizar o processo de conexão entre Doadores e Receptores
 
 O `Doe+Conecta` é um aplicativo mobile inovador desenvolvido para facilitar a doação de sangue e *conectar doadores e receptores* de maneira mais eficiente. A doação de sangue é um ato de solidariedade crucial para salvar vidas, mas enfrenta desafios, como a manutenção de estoques adequados nos bancos de sangue. Este aplicativo visa otimizar esse processo, oferecendo diversas funcionalidades que tornam a doação mais simples e acessível.
