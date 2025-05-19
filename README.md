@@ -1,6 +1,14 @@
 # 🩸 Doe+Conecta: Aplicativo para Doação de Sangue
 
-Acesse nossa [Landing page](https://feer-rodriguess90.github.io/DoeMaisConecta-App/)
+***OBS:***
+Este projeto foi desenvolvido utilizando Python com o framework Flet, que permite criar aplicações interativas e responsivas com uma abordagem semelhante ao Flutter, voltada para **desktop e mobile**.
+
+Como aplicações Flet não podem ser hospedadas diretamente no GitHub Pages, foi criada uma **landing page** separada em HTML, CSS e JavaScript. 
+Essa **landing page** tem como objetivo apresentar o projeto, destacar suas funcionalidades e convidar os usuários a baixarem o aplicativo.
+
+### 🌐 Acesse nossa [Landing page](https://feer-rodriguess90.github.io/DoeMaisConecta-App/)
+
+
 
 ### Doação De Sangue Na Palma Da Mão <br>
 Tecnologia em prol da vida: um app para otimizar o processo de conexão entre Doadores e Receptores
