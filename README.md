@@ -113,7 +113,7 @@ CREATE TABLE Chats (
 
 ## DER (Diagrama Entidade Relacionamento)
 
-![DER]()
+![DER](https://github.com/feer-rodriguess90/DoeMaisConecta-App/blob/main/assets/DER.png)
 
 
 ## Tela Login
