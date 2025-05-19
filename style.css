@@ -1,0 +1,96 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+header {
+  background-color: #b71c1c;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fbe9e7;
+  padding: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.banner img {
+  max-width: 350px;
+}
+
+.banner h2 {
+  max-width: 400px;
+  font-size: 22px;
+  color: #b71c1c;
+}
+
+.description,
+.features,
+.contact {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cta {
+  text-align: center;
+  margin: 20px;
+}
+
+.button {
+  background-color: #c62828;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.contact button {
+  background-color: #c62828;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #b71c1c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
